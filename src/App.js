@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar"
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
-import DotGroup from "./components/DotGroup.jsx";
-import Landing from "./components/Landing"
+import DotGroup from "./scenes/DotGroup";
+import Landing from "./scenes/Landing"
+import Navbar from "./scenes/Navbar"
 
 function App (){
     const [selectedPage, setSelectedPage] = useState("home");
