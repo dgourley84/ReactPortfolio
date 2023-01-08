@@ -3,9 +3,10 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from "./components/LineGradient";
 import Projects from "./scenes/Projects";
 import DotGroup from "./scenes/DotGroup";
-import Landing from "./scenes/Landing"
-import Navbar from "./scenes/Navbar"
-import MySkills from "./scenes/MySkills"
+import Landing from "./scenes/Landing";
+import Navbar from "./scenes/Navbar";
+import MySkills from "./scenes/MySkills";
+import Technologies from "./scenes/Languages";
 
 function App (){
     const [selectedPage, setSelectedPage] = useState("home");
@@ -45,6 +46,10 @@ function App (){
             <div className="w-5/6 mx-auto">
                 <Projects/>
             </div>
+            <LineGradient/>
+            <div className="w-5/6 mx-auto md:h-full">
+                <Technologies/>
+            </div>            
         </div>
     );
 }
