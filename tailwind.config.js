@@ -26,9 +26,6 @@ module.exports = {
       },
       content: {
         brush: "url('./assets/brush.png')",
-        profileImage: "url('./assets/profile-image.png')",
-        person2: "url('./assets/person-2.png')",
-        person3: "url('./assets/person-3.png')",
       },
     },
     screens: {
