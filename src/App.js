@@ -8,6 +8,7 @@ import Navbar from "./scenes/Navbar";
 import MySkills from "./scenes/MySkills";
 import Technologies from "./scenes/Languages";
 import Contact from "./scenes/Contact"
+import Footer from "./scenes/Footer";
 
 function App (){
     const [selectedPage, setSelectedPage] = useState("home");
@@ -54,7 +55,8 @@ function App (){
             <LineGradient/>
             <div className="w-5/6 mx-auto md:h-full">
                 <Contact/>
-            </div>         
+            </div>       
+            <Footer/>  
         </div>
     );
 }
