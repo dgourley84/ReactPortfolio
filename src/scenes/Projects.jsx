@@ -1,6 +1,27 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import {ProjectOne, ProjectTwo} from "../components/ProjectListing";
+// import {ProjectOne, ProjectTwo} from "../components/ProjectListing";
+import Project from "../components/ProjectListing"
+
+//images import
+import TextEditorProjectImage from "../assets/TextEditorProject.png"
+import SocialMediaNetwork from "../assets/SocialMediaNetwork.png"
+import ProfileGenerator from "../assets/ProfileGenerator.png"
+import NoteTaker from "../assets/NoteTaker.png"
+import QuizApp from "../assets/QuizApp.png"
+import HotOrNot from "../assets/HotOrNot.png"
+import DailyPlanner from "../assets/DailyPlanner.png"
+
+//project listing
+const projectTest = [
+  {img:TextEditorProjectImage, alt:"TextEditorProject", description:"This app is an online text editor that allows programmers to write code snippets in the browser and store them for later.", title:"Text Editor"},
+  {img:SocialMediaNetwork, alt:"SocialMediaNetwork", description:"Designed to emulate a social media api that allows a user to have friends, comments and reactions to comments.", title:"Social Network"},
+  {img:ProfileGenerator, alt:"ProfileGenerator", description:"A command-line application incorporating Object-Orientated-Programing to take user input and build a team profile", title:"Team Profile Generator"},
+  {img:NoteTaker, alt:"NoteTaker", description:"An application that can be used to write, save, and delete notes. Using an express backend and saves and retrieves note data from a JSON file.", title:"Note Taker"},
+  {img:QuizApp, alt:"Quiz", description:"Quiz App with timer using HTML, CSS and JS This application uses JavaScript WebAPI's, CSS and HTML to create a quiz application.", title:"Coding Quiz"},
+  {img:HotOrNot, alt:"WeatherApp", description:"Provide users with clothing suggestions based on the weather in a location that they search for.", title:"Weather App"},
+  {img:DailyPlanner, alt:"DailyPlanner", description:"Create a daily planner that allows user to input their activities. Using a colour coding system allowing users to quickly assess the hour and activity relevent at that particular time of the day.", title:"Daily Planner"},
+]
 
 
 const container = {
@@ -12,29 +33,6 @@ const container = {
   },
 };
 
-// const projectVariant = {
-//   hidden: { opacity: 0, scale: 0.8 },
-//   visible: { opacity: 1, scale: 1 },
-// };
-
-// const Project = ({ title }) => {
-//   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-//     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-//   const projectTitle = title.split(" ").join("-").toLowerCase();
-
-//   return (
-//     <motion.div variants={projectVariant} className="relative">
-//       <div className={overlayStyles}>
-//         <p className="text-2xl font-playfair">{title}</p>
-//         <p className="mt-7">
-//           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-//           porttitor accumsan tincidunt.
-//         </p>
-//       </div>
-//       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
-//     </motion.div>
-//   );
-// };
 
 const Projects = () => {
   return (
@@ -60,9 +58,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          A selection of projects highlighting my skills in both front and back end development
         </p>
       </motion.div>
 
@@ -75,20 +71,20 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            SMOOTH USER INTERFACES
           </div>
-          <ProjectOne/>
-          <ProjectTwo/>
+            {projectTest.map(project=>(
+              <Project title={project.title} img={project.img} description={project.description} alt={project.alt}/>
+            ))}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            SMOOTH USER EXPERIENCE
+            EFFICIENT FUNCTIONALITY
           </div>
         </motion.div>
       </div>
