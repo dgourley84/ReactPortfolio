@@ -14,13 +14,13 @@ import DailyPlanner from "../assets/DailyPlanner.png"
 
 //project listing
 const projectTest = [
-  {img:TextEditorProjectImage, alt:"TextEditorProject", description:"This app is an online text editor that allows programmers to write code snippets in the browser and store them for later.", title:"Text Editor"},
-  {img:SocialMediaNetwork, alt:"SocialMediaNetwork", description:"Designed to emulate a social media api that allows a user to have friends, comments and reactions to comments.", title:"Social Network"},
-  {img:ProfileGenerator, alt:"ProfileGenerator", description:"A command-line application incorporating Object-Orientated-Programing to take user input and build a team profile", title:"Team Profile Generator"},
-  {img:NoteTaker, alt:"NoteTaker", description:"An application that can be used to write, save, and delete notes. Using an express backend and saves and retrieves note data from a JSON file.", title:"Note Taker"},
-  {img:QuizApp, alt:"Quiz", description:"Quiz App with timer using HTML, CSS and JS This application uses JavaScript WebAPI's, CSS and HTML to create a quiz application.", title:"Coding Quiz"},
-  {img:HotOrNot, alt:"WeatherApp", description:"Provide users with clothing suggestions based on the weather in a location that they search for.", title:"Weather App"},
-  {img:DailyPlanner, alt:"DailyPlanner", description:"Create a daily planner that allows user to input their activities. Using a colour coding system allowing users to quickly assess the hour and activity relevent at that particular time of the day.", title:"Daily Planner"},
+  {key:1, img:TextEditorProjectImage, alt:"TextEditorProject", description:"This app is an online text editor that allows programmers to write code snippets in the browser and store them for later.", title:"Text Editor"},
+  {key:2, img:SocialMediaNetwork, alt:"SocialMediaNetwork", description:"Designed to emulate a social media api that allows a user to have friends, comments and reactions to comments.", title:"Social Network"},
+  {key:3, img:ProfileGenerator, alt:"ProfileGenerator", description:"A command-line application incorporating Object-Orientated-Programing to take user input and build a team profile", title:"Team Profile Generator"},
+  {key:4, img:NoteTaker, alt:"NoteTaker", description:"An application that can be used to write, save, and delete notes. Using an express backend and saves and retrieves note data from a JSON file.", title:"Note Taker"},
+  {key:5, img:QuizApp, alt:"Quiz", description:"Quiz App with timer using HTML, CSS and JS This application uses JavaScript WebAPI's, CSS and HTML to create a quiz application.", title:"Coding Quiz"},
+  {key:6, img:HotOrNot, alt:"WeatherApp", description:"Provide users with clothing suggestions based on the weather in a location that they search for.", title:"Weather App"},
+  {key:7, img:DailyPlanner, alt:"DailyPlanner", description:"Create a daily planner that allows user to input their activities. Using a colour coding system allowing users to quickly assess the hour and activity relevent at that particular time of the day.", title:"Daily Planner"},
 ]
 
 
@@ -32,7 +32,6 @@ const container = {
     },
   },
 };
-
 
 const Projects = () => {
   return (
@@ -78,7 +77,7 @@ const Projects = () => {
             SMOOTH USER INTERFACES
           </div>
             {projectTest.map(project=>(
-              <Project title={project.title} img={project.img} description={project.description} alt={project.alt}/>
+              <Project key={project.id} title={project.title} img={project.img} description={project.description} alt={project.alt}/>
             ))}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue

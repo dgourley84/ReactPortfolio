@@ -2,6 +2,7 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import {motion} from "framer-motion";
 import skillsImage from "../assets/skills-image.png";
+import Resume from "../assets/Resume.pdf";
 
 const MySkills = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -26,8 +27,9 @@ const MySkills = () => {
                     </p>
                     <LineGradient width="w-1/3"/>
                     <p className="mt-10 mb-7">
-                        Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-                        viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+                        Throughout my life I have always been an avid problem solver, breaking problems down to their lowest level to re-build in a better way.
+                        This fascination has served me well in my finance career and I hope to augment that with coding abilty for the future.
+                        As a lifetime-learner, I am always striving to add to my knowledge-base and improve upon my skills.
                     </p>
                 </motion.div>
 
@@ -66,8 +68,7 @@ const MySkills = () => {
                     <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"/>     
                     </div>
                     <p className="mt-5">
-                        Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-                        viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+                        13 Years in the finance world in both public and private accountancy.
                     </p>
                 </motion.div>
 
@@ -86,14 +87,13 @@ const MySkills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">02</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Innovative</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Curious</p>
                         </div>
                     <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"/>     
                     </div>
                     <p className="mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        As a problem solver I have an unbridadle curiosity of how different industries
+                        and projects work.
                     </p>
                 </motion.div>
                 
@@ -112,13 +112,12 @@ const MySkills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">03</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Imagitive</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Resume</p>
                         </div>
                     <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"/>     
                     </div>
                     <p className="mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <a href={Resume} download>Click here to download my resume</a>
                     </p>
                 </motion.div>
             </div>

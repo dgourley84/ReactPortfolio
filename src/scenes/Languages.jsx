@@ -35,7 +35,7 @@ const Technologies = () => {
                     </p>
                     <LineGradient width="mx-auto w-2/4"/>
                     <p className="mt-10">
-                        Insert some wording about my tech stack skills
+                        My tech-stack includes knowledge in the following:
                     </p>
             </motion.div>
             {/* {TechStack} */}
@@ -48,18 +48,18 @@ const Technologies = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 >
                 {/* ROW 1 */}
-                <i class="devicon-javascript-plain font-semibold text-8xl p-10"></i>
-                <i class="devicon-express-original-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-react-original-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-nodejs-plain-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-mongodb-plain-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-mysql-plain-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-git-plain-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-html5-plain-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-css3-plain-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-github-original-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-npm-original-wordmark font-semibold text-8xl p-10"></i>
-                <i class="devicon-sequelize-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-javascript-plain font-semibold text-8xl p-10"></i>
+                <i className ="devicon-express-original-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-react-original-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-nodejs-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-mongodb-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-mysql-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-git-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-html5-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-css3-plain-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-github-original-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-npm-original-wordmark font-semibold text-8xl p-10"></i>
+                <i className ="devicon-sequelize-plain-wordmark font-semibold text-8xl p-10"></i>
                 </motion.div>
             </div>
         </section>
