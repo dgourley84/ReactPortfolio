@@ -1,20 +1,27 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.fb0c3e07.css",
-    "main.js": "/ReactPortfolio/static/js/main.189b2678.js",
+    "main.js": "/ReactPortfolio/static/js/main.ba289dd1.js",
     "static/media/profile-image.png": "/ReactPortfolio/static/media/profile-image.35c3b34a5122b901d33a.png",
+    "static/media/Resume.pdf": "/ReactPortfolio/static/media/Resume.fca41d315f670e60beb5.pdf",
+    "static/media/HotOrNot.png": "/ReactPortfolio/static/media/HotOrNot.33f63d41a27b25b3865a.png",
     "static/media/skills-image.png": "/ReactPortfolio/static/media/skills-image.51e40da64df180a7669a.png",
     "static/media/contact-image.jpeg": "/ReactPortfolio/static/media/contact-image.37fcb61b49d6aa5c40d3.jpeg",
+    "static/media/ProfileGenerator.png": "/ReactPortfolio/static/media/ProfileGenerator.5000056cc9b5af56d487.png",
+    "static/media/SocialMediaNetwork.png": "/ReactPortfolio/static/media/SocialMediaNetwork.b597384bdd313841aeab.png",
+    "static/media/DailyPlanner.png": "/ReactPortfolio/static/media/DailyPlanner.7102d50a064ee212a621.png",
     "static/media/brush.png": "/ReactPortfolio/static/media/brush.85c9bab5ba2d7dcae1e3.png",
+    "static/media/NoteTaker.png": "/ReactPortfolio/static/media/NoteTaker.fc83f9d96a0e89761446.png",
+    "static/media/QuizApp.png": "/ReactPortfolio/static/media/QuizApp.b94826480f485f82ed87.png",
     "static/media/TextEditorProject.png": "/ReactPortfolio/static/media/TextEditorProject.456992e3087588eaffb1.png",
     "index.html": "/ReactPortfolio/index.html",
     "static/media/close-icon.svg": "/ReactPortfolio/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
     "static/media/menu-icon.svg": "/ReactPortfolio/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
     "main.fb0c3e07.css.map": "/ReactPortfolio/static/css/main.fb0c3e07.css.map",
-    "main.189b2678.js.map": "/ReactPortfolio/static/js/main.189b2678.js.map"
+    "main.ba289dd1.js.map": "/ReactPortfolio/static/js/main.ba289dd1.js.map"
   },
   "entrypoints": [
     "static/css/main.fb0c3e07.css",
-    "static/js/main.189b2678.js"
+    "static/js/main.ba289dd1.js"
   ]
 }
